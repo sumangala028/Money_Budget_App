@@ -114,7 +114,7 @@ getTotBalance(List<TransactionModel> entiredata)
 
           width: 900,
           child: Text(
-            '© Sumangala MS22040930',
+            '© sumangala MS22040930',
             textAlign: TextAlign.center,
             style: TextStyle(
                 color: Colors.black,
@@ -136,7 +136,7 @@ getTotBalance(List<TransactionModel> entiredata)
         });
       },
         backgroundColor: Static.PrimaryMaterialColor,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14.0)),
         child: Icon(Icons.add,size: 32.0,),
 
 
@@ -150,7 +150,7 @@ getTotBalance(List<TransactionModel> entiredata)
         if (snapshot.hasData){
           if(snapshot.data!.isEmpty)
             {
-              return Center(child: Text("Please add the transactions!"),);
+              return Center(child: Text("Please add the transactions by clicking this button!"),);
             }
            getTotBalance(snapshot.data!);
           return ListView(
@@ -180,11 +180,11 @@ getTotBalance(List<TransactionModel> entiredata)
                        ),
 
                          Text(
-                           "Welcome, ${preferences.getString('name')}",
+                           "Welcome, ${preferences.getString('name')} !!!",
                            style: TextStyle(
                              fontSize: 23.0,
                              fontWeight: FontWeight.w700,
-                             color: Colors.lightGreen[800],
+                             color: Colors.green[600],
                            ),
 
                          ),
@@ -387,7 +387,7 @@ Widget cardExpensePart(String value){
         padding: EdgeInsets.all(7.0
         ),
         child: Icon(Icons.arrow_downward,
-          size: 30.0,color: Colors.red[700],
+          size: 30.0,color: Colors.red[900],
 
         ),
         margin: EdgeInsets.only(right: 8.0),
@@ -500,7 +500,7 @@ Widget expensePart(int value, String note, DateTime date,int index){
         bool? answer = await showConfirmDialog(
           context,
           "WARNING",
-          "This action will delete this income recordnpermanently. Do you want to continue ?",
+          "This action will delete this income record permanently. Do you want to continue ?",
         );
         if (answer != null && answer) {
           await dbHelper.deleteData(index);
@@ -510,8 +510,8 @@ Widget expensePart(int value, String note, DateTime date,int index){
       child: Container(
         margin: EdgeInsets.all(8.0),
         padding: EdgeInsets.all(18.0),
-        decoration: BoxDecoration(color: Color(0xffd8fac5),
-            // Color(0xffced4eb),
+        decoration: BoxDecoration(color: Color(0xff69f0ae),
+            
             borderRadius: BorderRadius.circular(10.0) ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -523,7 +523,7 @@ Widget expensePart(int value, String note, DateTime date,int index){
                   children: [
                     Icon(Icons.arrow_circle_up_outlined,
                       size: 28.0,
-                      color: Colors.green[700],
+                      color: Colors.green[800],
                     ),
                     SizedBox(
                       width: 4.0,

@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:expense/controllers/db_helper.dart';
 import 'package:expense/static.dart' as Static;
-//import 'package:flutter/foundation.dart';
-//import 'package:flutter/material.dart';
+
 
 
 
@@ -101,7 +100,7 @@ class _AddTransactionState extends State<AddTransaction> {
 
                 padding: EdgeInsets.all(11.0),
                 child:
-                  Icon(Icons.attach_money,size: 24.0,color: Colors.black,),
+                  Icon(Icons.attach_money,size: 24.0,color: Colors.white,),
 
     ),
                  SizedBox(
@@ -276,7 +275,7 @@ class _AddTransactionState extends State<AddTransaction> {
                     child: Icon(
                       Icons.date_range,
                       size: 20.0,
-                      // color: Colors.grey[700],
+                      
                       color: Colors.white,
                     ),
                   ),
@@ -287,7 +286,7 @@ class _AddTransactionState extends State<AddTransaction> {
                   Text(
                     "${sdate.day} ${months[sdate.month - 1]}",
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 18.0,
                       color: Colors.grey[600],
                     ),
                   ),

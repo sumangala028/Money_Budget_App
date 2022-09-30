@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 showConfirmDialog(BuildContext context, String title, String content) async {
@@ -18,7 +17,7 @@ showConfirmDialog(BuildContext context, String title, String content) async {
             ),
           ),
           child: Text(
-            "YES",
+            "DELETE",
           ),
         ),
         ElevatedButton(
@@ -26,7 +25,7 @@ showConfirmDialog(BuildContext context, String title, String content) async {
             Navigator.of(context).pop(false);
           },
           child: Text(
-            "No",
+            "CANCEL",
           ),
         ),
       ],

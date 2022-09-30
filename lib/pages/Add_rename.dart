@@ -1,9 +1,8 @@
-//  will ask use for their name here
-
+import 'package:flutter/material.dart';
 import 'package:expense/controllers/db_helper.dart';
 import 'package:expense/pages/homepage.dart';
 
-import 'package:flutter/material.dart';
+
 
 
 
@@ -20,7 +19,6 @@ class _AddreNameState extends State<AddreName> {
 
   String name = "";
 
-  //
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +31,7 @@ class _AddreNameState extends State<AddreName> {
 
           width: 900,
           child: Text(
-            '© sumangala',
+            '© sumangala MS22090430',
             textAlign: TextAlign.center,
             style: TextStyle(
                 color: Colors.black,
