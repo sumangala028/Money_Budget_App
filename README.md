@@ -6,7 +6,9 @@ A new Flutter project.
 
 This project is developed for the Enterprise Mobility module assignment. 
 
-Student Details - MS22090430
+Student Name - Jeyasumangala.R
+
+Registration Number - MS22090430
 
 
 Program - MSc in Information Technology specializing in Enterprise Application Development
